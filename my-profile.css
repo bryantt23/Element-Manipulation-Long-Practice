@@ -1,3 +1,19 @@
 body {
   background-color: aqua;
 }
+
+.name {
+  color: red;
+}
+
+.my-details {
+  border: 5px solid black;
+}
+
+.detail:hover {
+  background-color: lime;
+}
+
+.detail {
+  padding: 5px;
+}
