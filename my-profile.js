@@ -3,13 +3,16 @@ h1.id = 'h1';
 h1.innerText = 'bt';
 
 const ul = document.createElement('ul');
-const li1 = document.createElement('li');
-li1.textContent = 'b';
-const li2 = document.createElement('li');
-li2.textContent = 't';
 
-ul.appendChild(li1);
-ul.appendChild(li2);
+function addLiElements(arr) {
+  for (const elem of arr) {
+    const li = document.createElement('li');
+    li.textContent = elem;
+    ul.appendChild(li);
+  }
+}
+
+addLiElements(['hi', 'how', 'goes?']);
 
 document.body.appendChild(h1);
 document.body.appendChild(ul);
